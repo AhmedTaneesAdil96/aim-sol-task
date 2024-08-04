@@ -8,3 +8,31 @@
   --silver: #B3B3B2;
   --taupe: #494034;
 }
+
+
+.btn-brown {
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  background-color: var(--silver); /* Use the variable */
+  color: var(--taupe); /* Use the variable */
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-brown:hover {
+  background-color: var(--platinum); /* Use the variable */
+}
+
+
+.check-out-btn {
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  background-color: var(--silver); /* Use the variable */
+  color: var(--taupe); /* Use the variable */
+  border: none;
+  border-radius: 5px;
+}
+
+.check-out-btn:hover {
+  background-color: var(--platinum); /* Use the variable */
+}

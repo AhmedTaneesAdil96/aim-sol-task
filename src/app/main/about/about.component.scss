@@ -1,0 +1,30 @@
+// src/app/contact-us/contact-us.component.scss
+@import "../../scss/colors";
+
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+
+// Styles for the About Us page
+.about-heading {
+  color: $taupe;
+}
+
+.about-text {
+  color: $chamoisee;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid $chamoisee;
+  box-shadow: 0 4px 8px rgba($taupe, 0.2);
+}
+

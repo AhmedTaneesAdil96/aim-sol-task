@@ -1,0 +1,46 @@
+@import "../../scss/colors";
+
+
+// Styles for the Contact Us page
+.contact-heading {
+  color: $taupe;
+}
+
+.contact-subtitle {
+  color: $chamoisee;
+}
+
+.contact-input {
+  border-color: $silver;
+
+  &:focus {
+    border-color: $chamoisee;
+    box-shadow: 0 0 0 0.2rem rgba($chamoisee, 0.25);
+  }
+}
+
+.contact-btn {
+  background-color: $chamoisee;
+  border-color: $chamoisee;
+
+  &:hover {
+    background-color: darken($chamoisee, 10%);
+    border-color: darken($chamoisee, 10%);
+  }
+}
+
+.contact-info {
+  background-color: $platinum;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-info-heading {
+  color: $taupe;
+}
+
+.contact-info-icon {
+  color: $chamoisee;
+  margin-right: 10px;
+}
+

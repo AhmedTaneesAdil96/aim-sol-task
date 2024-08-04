@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="error-wrapper">
+    <h1 class="error-code">404</h1>
+    <p class="error-message">Oops! Page not found</p>
+    <p class="error-description">
+      We couldn’t find the page you’re looking for. Perhaps searching can help or go back to the
+      <a [routerLink]="['/app/dashboard']">homepage</a>.
+    </p>
+    <p class="redirect-message">
+      You will be redirected to the dashboard in <span id="countdown">10</span> seconds.
+    </p>
+    <a [routerLink]="['/app/dashboard']" class="btn btn-primary btn-brown ">Go to Homepage</a>
+
+  </div>
+</div>

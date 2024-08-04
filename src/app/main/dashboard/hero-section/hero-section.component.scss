@@ -2,7 +2,7 @@
 .bg-image-div {
   position: relative; /* Set position to relative to contain the box */
   height: 500px; /* Adjust the height as needed */
-  background-image: url('../../assets/1.jpg');
+  background-image: url('../../../assets/1.jpg');
   background-size: cover; /* Adjust size to cover the div */
   background-position: center; /* Keeps the top part of the image visible */
   background-attachment: scroll; /* Keeps the image fixed at the top */
