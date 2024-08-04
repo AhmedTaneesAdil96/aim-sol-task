@@ -3,5 +3,10 @@
 :host {
   display: block;
   min-height: 100vh;
-  background-color: $pale-dogwood; /* Use your defined color variable */
+  background-color: $pale-dogwood;
+}
+
+.main-div {
+  margin-top: 60px !important;
+
 }

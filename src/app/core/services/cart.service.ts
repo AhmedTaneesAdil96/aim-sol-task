@@ -1,17 +1,6 @@
-// src/app/cart.service.ts
-
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-
-export interface CartItem {
-  id: number;
-  name: string;
-  price: number;
-  quantity: number;
-  src: string;
-  title: string;
-  info: string;
-}
+import { CartItem } from '../../shared/interfaces/cart-item.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -47,17 +36,14 @@ export class CartService {
     },
   ];
 
-  // Use BehaviorSubject to manage and emit cart item count
   private cartItemCountSubject = new BehaviorSubject<number>(
     this.calculateTotalQuantity(),
   );
-  // Expose observable for cart item count
   cartItemCount$ = this.cartItemCountSubject.asObservable();
   private cartSubject = new BehaviorSubject<CartItem[]>(this.cartItems);
-  // Expose observable for cart items
   cart$ = this.cartSubject.asObservable();
 
-  addToCart(item: CartItem) {
+  addToCart(item: CartItem): void {
     const existingItem = this.cartItems.find(
       (cartItem) => cartItem.id === item.id,
     );
@@ -69,12 +55,12 @@ export class CartService {
     this.updateCart();
   }
 
-  removeFromCart(itemId: number) {
+  removeFromCart(itemId: number): void {
     this.cartItems = this.cartItems.filter((item) => item.id !== itemId);
     this.updateCart();
   }
 
-  increaseQuantity(itemId: number) {
+  increaseQuantity(itemId: number): void {
     const item = this.cartItems.find((item) => item.id === itemId);
     if (item) {
       item.quantity++;
@@ -82,7 +68,7 @@ export class CartService {
     }
   }
 
-  decreaseQuantity(itemId: number) {
+  decreaseQuantity(itemId: number): void {
     const item = this.cartItems.find((item) => item.id === itemId);
     if (item) {
       if (item.quantity > 1) {
@@ -94,19 +80,19 @@ export class CartService {
     }
   }
 
-  getTotalPrice() {
+  getTotalPrice(): number {
     return this.cartItems.reduce(
       (total, item) => total + item.price * item.quantity,
       0,
     );
   }
 
-  clearCart() {
+  clearCart(): void {
     this.cartItems = [];
     this.updateCart();
   }
 
-  private updateCart() {
+  private updateCart(): void {
     this.cartSubject.next(this.cartItems);
     this.cartItemCountSubject.next(this.calculateTotalQuantity());
   }
