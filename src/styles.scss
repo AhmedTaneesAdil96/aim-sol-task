@@ -36,3 +36,121 @@
 .check-out-btn:hover {
   background-color: var(--platinum); /* Use the variable */
 }
+
+
+.bg-custom-light {
+  background-color: $pale-dogwood;
+}
+
+
+.text-custom {
+  color: $taupe;
+}
+
+.text-custom-dark {
+  color: $chamoisee;
+}
+
+
+.border-custom {
+  border-color: $silver;
+}
+
+.border-custom-light {
+  border-color: $pale-dogwood;
+}
+
+
+.btn-custom {
+  background-color: $chamoisee;
+  border-color: $chamoisee;
+}
+
+.btn-custom:hover {
+  background-color: darken($chamoisee, 10%);
+  border-color: darken($chamoisee, 10%);
+}
+
+
+.link-custom {
+  color: $taupe;
+}
+
+.link-custom:hover {
+  color: $chamoisee;
+}
+
+
+.list-unstyled .ms-3 .link-custom {
+  color: black;
+}
+
+
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+
+.about-heading {
+  color: $taupe;
+}
+
+.about-text {
+  color: $chamoisee;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid $chamoisee;
+  box-shadow: 0 4px 8px rgba($taupe, 0.2);
+}
+
+.contact-heading {
+  color: $taupe;
+}
+
+.contact-subtitle {
+  color: $chamoisee;
+}
+
+.contact-input {
+  border-color: $silver;
+
+  &:focus {
+    border-color: $chamoisee;
+    box-shadow: 0 0 0 0.2rem rgba($chamoisee, 0.25);
+  }
+}
+
+.contact-btn {
+  background-color: $chamoisee;
+  border-color: $chamoisee;
+
+  &:hover {
+    background-color: darken($chamoisee, 10%);
+    border-color: darken($chamoisee, 10%);
+  }
+}
+
+.contact-info {
+  background-color: $platinum;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-info-heading {
+  color: $taupe;
+}
+
+.contact-info-icon {
+  color: $chamoisee;
+  margin-right: 10px;
+}
+
