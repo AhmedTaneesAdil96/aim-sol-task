@@ -1,0 +1,74 @@
+@import "../../scss/colors";
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    background-color: #2bba75; /* Blue color */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10; /* Ensure the badge is on top of other elements */
+    text-align: center;
+  }
+
+  .card-img-top {
+    height: 300px; // Adjust for portrait size
+    object-fit: cover;
+  }
+
+  .card-body {
+    background-color: $platinum;
+    color: $taupe;
+    text-align: center;
+
+    .card-title {
+      color: $chamoisee;
+    }
+
+    .card-text {
+      color: $silver;
+    }
+  }
+
+  .card-footer {
+    background-color: $chamoisee;
+    color: $platinum;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+
+    .btn {
+      margin: 10px;
+    }
+  }
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+}

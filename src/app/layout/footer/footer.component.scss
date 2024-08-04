@@ -1,0 +1,49 @@
+@import "../../scss/colors";
+
+/* Background Color */
+.bg-custom-light {
+  background-color: $pale-dogwood;
+}
+
+/* Text Colors */
+.text-custom {
+  color: $taupe;
+}
+
+.text-custom-dark {
+  color: $chamoisee;
+}
+
+/* Borders */
+.border-custom {
+  border-color: $silver;
+}
+
+.border-custom-light {
+  border-color: $pale-dogwood;
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: $chamoisee;
+  border-color: $chamoisee;
+}
+
+.btn-custom:hover {
+  background-color: darken($chamoisee, 10%);
+  border-color: darken($chamoisee, 10%);
+}
+
+/* Links */
+.link-custom {
+  color: $taupe;
+}
+
+.link-custom:hover {
+  color: $chamoisee;
+}
+
+/* Social Icons */
+.list-unstyled .ms-3 .link-custom {
+  color: black;
+}

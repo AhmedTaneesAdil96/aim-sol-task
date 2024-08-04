@@ -1,0 +1,51 @@
+
+.bg-image-div {
+  position: relative; /* Set position to relative to contain the box */
+  height: 500px; /* Adjust the height as needed */
+  background-image: url('../../assets/1.jpg');
+  background-size: cover; /* Adjust size to cover the div */
+  background-position: center; /* Keeps the top part of the image visible */
+  background-attachment: scroll; /* Keeps the image fixed at the top */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.box {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--pale-dogwood); /* Use the variable */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--taupe); /* Use the variable */
+}
+
+.text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: var(--chamoisee); /* Use the variable */
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  background-color: var(--silver); /* Use the variable */
+  color: var(--taupe); /* Use the variable */
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--platinum); /* Use the variable */
+}

@@ -1,0 +1,14 @@
+<div class="container text-center my-5">
+  <h1>Browse the range</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="row">
+    <div *ngFor="let image of images; let i = index" class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <img [src]="image" alt="Category Image" class="card-img-top">
+        <div class="card-body">
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
