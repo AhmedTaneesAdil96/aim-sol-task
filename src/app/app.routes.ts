@@ -7,5 +7,12 @@ export const routes: Routes = [
     loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
 
+  {
+    path: 'public',
+    loadChildren: () =>
+      import('./public/page-not-found/public.module').then(
+        (m) => m.PublicModule,
+      ),
+  },
   { path: '**', redirectTo: 'public' },
 ];

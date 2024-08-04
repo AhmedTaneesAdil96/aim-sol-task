@@ -1,0 +1,7 @@
+@import "../scss/colors";
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: $pale-dogwood; /* Use your defined color variable */
+}

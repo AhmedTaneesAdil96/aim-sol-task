@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" routerLink="/app/dashboard">Navbar</a>
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
             data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
@@ -9,22 +9,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item mx-2">
-          <a aria-current="page" class="nav-link active" href="#">Home</a>
+          <a aria-current="page" class="nav-link active" routerLink="/app/dashboard">Home</a>
         </li>
         <li class="nav-item mx-2">
-          <a aria-current="page" class="nav-link active" href="#">Shop</a>
+          <a aria-current="page" class="nav-link active" routerLink="/app/dashboard">Shop</a>
         </li>
         <li class="nav-item mx-2">
-          <a aria-current="page" class="nav-link active" href="#">About</a>
+          <a aria-current="page" class="nav-link active" routerLink="./about">About</a>
         </li>
         <li class="nav-item mx-2">
-          <a aria-current="page" class="nav-link active" href="#">Contact</a>
+          <a aria-current="page" class="nav-link active" routerLink="./contact-us">Contact</a>
         </li>
+
+
       </ul>
-      <form class="d-flex" role="search">
-        <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <button [matBadge]="cartItemCount" mat-icon-button matBadgeColor="accent" routerLink="./cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
     </div>
   </div>
 </nav>
